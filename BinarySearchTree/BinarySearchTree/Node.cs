@@ -8,28 +8,31 @@ namespace BinarySearchTree
 {
     class Node
     {
-        public int value;
         public Node left;
         public Node right;
         public Node parent;
+        public int numberInNode;
 
-        public Node (int initial)
+        //constructor
+
+
+        public Node (int numberInNode)
         {
-            
-            value = initial;
+
+            this.numberInNode = numberInNode; 
             left = null;
             right = null;
         }
 
-        public int initial
+        public int NumberInNode
         {
             get
             {
-                return initial;
+                return numberInNode;
             }
             set
             {
-                initial = value;
+                numberInNode = value;
             }
         }
 
@@ -67,9 +70,6 @@ namespace BinarySearchTree
                 parent = value;
             }
         }
-
-
-
 
     }
 }
